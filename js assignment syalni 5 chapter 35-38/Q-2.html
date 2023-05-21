@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function now() {
+            var date = new Date().getDate();
+            var hr = new Date().getHours();
+            var min = new Date().getMinutes();
+            if (hr < 12) {
+                min = min + " AM";
+            }
+            else {
+                min = min + " PM";
+            }
+            document.write("Current date: " + date + "<br/>Current time: " + hr + ":" + min);
+        }
+        now();
+    </script>
+</body>
+
+</html>

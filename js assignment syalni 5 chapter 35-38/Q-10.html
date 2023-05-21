@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function area(width, height) {
+            var A = width * height;
+            return A;
+        }
+        var area1 = area(20, 15);
+        document.write('<h3>i. Arguments as value</h3>Width: 20<br/>height: 15<br/>Area: ' + area1);
+        var width = 20;
+        var height = 15;
+        var area2 = area(width, height);
+        document.write('<h3>ii. Arguments as variables</h3>Width: ' + width +
+            ' <br/>Height: ' + height + '<br/>Area: ' + area2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function occurencesOfALetter(string, letter) {
+            var occurence = 0;
+            for (var i = 0; i < string.length; i++) {
+                if (string[i].toLowerCase() === letter.toLowerCase()) {
+                    occurence = occurence + 1;
+                }
+            }
+            return occurence;
+        }
+        string = prompt("Enter any string");
+        letter = prompt('Enter any letter to check its occurence in the given string')
+        var occurences = occurencesOfALetter(string, letter);
+        document.write("String: " + string + "<br/>There are " + occurences + " occurence(s) of letter " + letter);
+
+    </script>
+</body>
+
+</html>

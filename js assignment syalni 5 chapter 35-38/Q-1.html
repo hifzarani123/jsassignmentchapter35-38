@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tableOf(num, length) {
+            document.write("Multiplication table of " + num + "<br/>Length: " + length + "<br/>");
+            for (var i = 1; i <= length; i++) {
+                document.write("<br/>" + num + " x " + i + " = " + num * i);
+            }
+        }
+        var num = +prompt("Enter a number to print its multiplication table");
+        var length = +prompt("Enter the length of table");
+        tableOf(num,length);
+    </script>
+</body>
+
+</html>

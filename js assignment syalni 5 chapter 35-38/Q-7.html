@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function factorialOf(num) {
+            var fact = 1;
+            for (var i = 1; i <= num; i++) {
+                fact = fact * i;
+            }
+            return fact
+        }
+        var anyNum = +prompt('Enter any number to print its factorial');
+        var factorial = factorialOf(anyNum);
+        document.write('Factorial of ' + anyNum + ' is ' + factorial);
+    </script>
+</body>
+
+</html>
